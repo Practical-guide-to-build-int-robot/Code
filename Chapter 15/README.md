@@ -36,7 +36,7 @@ To run Default SSD (Single Shot Detection) algorithm:
 
     `git clone https://github.com/Kukanani/vision_msgs.git`
 
-    `git clone https://github.com/osrf/tensorflow_object_detector.git`
+    `git clone https://github.com/Practical-guide-to-build-int-robot/Code.git`
 
 6. Build tensorflow_object_detector and Vision message 
 

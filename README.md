@@ -1,7 +1,7 @@
 # Code
 Chapter wise Code
 
-#Index for cross referencing
+# Index for cross referencing
 Chapter 1: ROS - Describes the concept and architecture of Robotic Operating System (ROS) along with
 an introduction to Ubuntu command terminal. Familiarity with the Ubuntu command terminal will help
 you navigate, execute and monitor the files and data in the ROS system. In the next chapter we will

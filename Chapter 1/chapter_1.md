@@ -1,3 +1,5 @@
+**Basic commands on ubuntu terminal**
+
 **~**: home\
 **/**: root\
 **\**:escape for spaces and special characters in run command\

@@ -2,7 +2,7 @@
 sudo apt-get install ros-<rosdistro>-rosbridge-suite\
 For Ros kinetic : sudo apt-get install ros-kinetic-rosbridge-suite
 
-Script to connect to rosbridge server on port 9090\
+Script to connect to rosbridge server on port 9090
 ---
 	 var ros = new ROSLIB.Ros({
 	 url : 'ws://localhost:9090'
@@ -28,12 +28,12 @@ Script to connect to rosbridge server on port 9090\
 
 ---
 
-HTML Element for button\
+HTML Element for button
 ---
 	 <button onclick="publish_SetServo(0)">0&deg;</button>
 	 <button onclick="publish_SetServo(180)">180&deg;</button>
 ---
-Corresponding buttton link to ROS\
+Corresponding buttton link to ROS
 ---
 	   let ROS_Servo = new ROSLIB.Topic({ros: ros,name:"/servo",messageType:"std_msgs/UInt8"});
 	   function publish_SetServo(angle)
@@ -43,11 +43,11 @@ Corresponding buttton link to ROS\
 ---
 
 
-HTML Element for checkbox\
+HTML Element for checkbox
 ---
     <input type="checkbox" id="headlightSwitch" onchange="sendHeadlightStatus(this.checked)">
 ---
-Corresponding checkbox link to ROS\
+Corresponding checkbox link to ROS
 ---
 	 let ROS_Headlight = new ROSLIB.Topic({ros: ros,name:"/headlight",messageType:"std_msgs/Bool"});
 	   function sendHeadlightStatus(state)
@@ -57,11 +57,11 @@ Corresponding checkbox link to ROS\
 ---
 
 
-HTML Element for slider\
+HTML Element for slider
 ---
      <input type="range" id="servoInput" oninput="sendServoAngle(this.value)" min="0" max="180" value="90">
 ---
-Corresponding slider link to ROS\
+Corresponding slider link to ROS
 ---
 	   let ROS_Servo = new ROSLIB.Topic({ros: ros,name:"/servo",messageType:"std_msgs/UInt8"});
 	   function sendServoAngle(angle)
@@ -70,13 +70,13 @@ Corresponding slider link to ROS\
 	   }
 ---
 
-HTML Element for Progress bar\
+HTML Element for Progress bar
 ---
 	 <span>Ultrasonic Sensor</span>
 	 <progress id="ultrasonicIndicator" value="0" max="255"></progress>
 
 ---
-Corresponding progress bar link to ROS\
+Corresponding progress bar link to ROS
 ---
 	 let ROS_Ultrasonic = new ROSLIB.Topic({ros: ros,name:"/ultrasonic",messageType:"std_msgs/UInt8"});
 	 ROS_Ultrasonic.subscribe(function(message) {
@@ -84,7 +84,7 @@ Corresponding progress bar link to ROS\
 	     });
 ---
 
-Threejs library integration for IMU\
+Threejs library integration for IMU
 ---
 	 <div id="threeCanvas"></div>
 	 <script src="three.js"></script>
@@ -135,7 +135,7 @@ Threejs library integration for IMU\
 	 </script>
 ---
 
-Subscribing to IMU values from ROS\
+Subscribing to IMU values from ROS
 ---
 	     let ROS_Odometry = new ROSLIB.Topic({ros: ros,name:"/odom",messageType:"nav_msgs/Odometry"});
 	 ROS_Odometry.subscribe(function(message) {

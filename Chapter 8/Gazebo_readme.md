@@ -2,16 +2,16 @@
 sudo apt install ros-kinetic-gazebo-ros\
 
 **Material parameters in Gazebo**\
-<material name="Red">\
-<colorrgba =”1.0  0.0  0.0  1.0”/>\
-</material>\
-<gazebo reference="base_link">\
-<material>Gazebo/Red</material>\
-</gazebo>\
+    <material name="Red">
+    <colorrgba =”1.0  0.0  0.0  1.0”/>
+    </material>
+    <gazebo reference="base_link">
+    <material>Gazebo/Red</material>
+    </gazebo>
 
 **Model Plugin sample**\
-<gazebo>\
- <plugin name="differential_drive_controller" filename="libdiffdrive_plugin.so">\
+<gazebo>
+ <plugin name="differential_drive_controller" filename="libdiffdrive_plugin.so">
     ... plugin parameters ...\
  </plugin>\
 </gazebo>\

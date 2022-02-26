@@ -1,8 +1,8 @@
 **Installing usb cam and Aruco ROS package**\
 sudo apt-get install ros-kinetic-usb-cam ros-kinetic-aruco-ros\
-sudo apt-get install ros-kinetic-usb-cam\
+sudo apt-get install ros-kinetic-usb-cam
 
-Publisher Launch file\
+Publisher Launch file
 ---
 	 <launch>
 	 <arg name="video_device" default="/dev/video1" />
@@ -20,7 +20,7 @@ Publisher Launch file\
 	 </launch>
 ---
 
-Launch file to start marker tracking\
+Launch file to start marker tracking
 --- 
 	 <launch>
 	 <arg name="markerId" default="12"/>

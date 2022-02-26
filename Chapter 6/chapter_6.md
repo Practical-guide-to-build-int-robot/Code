@@ -1,6 +1,6 @@
 **Installing turtlesim package**\
 sudo apt-get install ros-$(rosversion –d)-turtlesim\
-For ros kinetic : sudo apt-get install ros-kinetic-turtlesim\
+For ros kinetic : sudo apt-get install ros-kinetic-turtlesim
 
 **Start turtlesim with teleopkey**\
 rosrun turtlesim turtlesim_node\

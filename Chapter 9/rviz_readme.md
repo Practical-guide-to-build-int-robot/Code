@@ -1,7 +1,7 @@
-**Command to run Rviz**
+**Command to run Rviz**\
 rosrun rviz rviz
 
-Add the following lines to the launch file for visualizing urdf\
+Add the following lines to the launch file for visualizing urdf
 ---
     <param name="robot_description" command="$(find xacro)/xacro.py '$(find my_robot)/urdf/robot.xacro'" />
 	 <include file="$(find my_robot)/launch/empty_world.launch">
@@ -13,7 +13,7 @@ Add the following lines to the launch file for visualizing urdf\
 	 </node>
 ---
 
-Add following lines in launch file to start rviz through launch file\
+Add following lines in launch file to start rviz through launch file
 ---
 	 <launch>
 	 <node type="rviz" name="rviz" pkg="rviz" args="-d $(find package_name)/rviz/config_file.rviz" />

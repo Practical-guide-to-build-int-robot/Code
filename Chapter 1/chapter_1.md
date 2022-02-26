@@ -2,7 +2,7 @@
 
 **~**: home\
 **/**: root\
-**\**:escape for spaces and special characters in run command\
+\ :escape for spaces and special characters in run command\
 **.filename**: hidden file\
 **cd**: The above command ‘cd’ changes/opens the terminal into home directory\
 **cd path/**: The above command ‘cd’ changes/opens the terminal in the directory mentioned by the path\
